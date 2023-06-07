@@ -1,0 +1,9 @@
+body {
+	white-space: pre-line;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 600;
+}
+p {
+	font-style: italic;
+	font-weight: normal;
+}
