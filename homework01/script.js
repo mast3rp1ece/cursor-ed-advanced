@@ -41,7 +41,7 @@ document.writeln('Profit - ' + profit);
 
 let = allStrings = `
 Max price - ${maxPrice}
-Min price - ${maxPrice}
+Min price - ${minPrice}
 Sum of products prices - ${sumPrice}
 Sum of whole prices - ${sumWholePrice}
 Round price - ${roundPrice}
