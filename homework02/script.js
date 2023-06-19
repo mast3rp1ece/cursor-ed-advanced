@@ -1,11 +1,13 @@
-let N = Math.round(parseFloat(prompt('Set start value', '')));
-while (isNaN(N)) {
-	N = Math.round(parseFloat(prompt('Set start value', '')));
+let N = parseFloat(prompt('Set start value', ''));
+while (isNaN(N) || !Number.isInteger(N) || N <= 0) {
+	N = parseFloat(prompt('Set start value', ''));
 }
-let M = Math.round(parseFloat(prompt('Set end value', '')));
-while (isNaN(M)) {
-	M = Math.round(parseFloat(prompt('Set end value', '')));
+
+let M = parseFloat(prompt('Set end value', ''));
+while (isNaN(M) || !Number.isInteger(M) || M <= N) {
+	M = parseFloat(prompt('Set end value', ''));
 }
+
 let skipEven = confirm('Skip even numbers?');
 let result = 0;
 
@@ -15,5 +17,6 @@ for (let i = N; i <= M; i++) {
 	}
 	result += i;
 }
-document.writeln('The result: ', result, '!')
-console.log('The result: ', result, '!')
+
+document.writeln('The result: ', result, '!');
+console.log('The result: ', result, '!');
