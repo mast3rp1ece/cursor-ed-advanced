@@ -1,22 +1,22 @@
-let N = parseFloat(prompt('Set start value', ''));
-while (isNaN(N) || !Number.isInteger(N) || N <= 0) {
-	N = parseFloat(prompt('Set start value', ''));
+let N = '';
+while (isNaN(N) || !Number.isInteger(parseFloat(N)) || N <= 0 || N.includes(',')) {
+  N = prompt('Set start value', '');
 }
 
-let M = parseFloat(prompt('Set end value', ''));
-while (isNaN(M) || !Number.isInteger(M) || M <= N) {
-	M = parseFloat(prompt('Set end value', ''));
+let M = '';
+while (isNaN(M) || !Number.isInteger(parseFloat(M)) || M <= N || M.includes(',')) {
+  M = prompt('Set end value', '');
 }
 
 let skipEven = confirm('Skip even numbers?');
 let result = 0;
 
-for (let i = N; i <= M; i++) {
+for (let i = parseInt(N); i <= parseInt(M); i++) {
 	if (skipEven && i % 2 === 0) {
-		continue;
+	  continue;
 	}
 	result += i;
-}
+ }
 
 document.writeln('The result: ', result, '!');
 console.log('The result: ', result, '!');
