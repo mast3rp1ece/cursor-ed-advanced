@@ -21,8 +21,8 @@ function getMySalary() {
 	const minSalary = 1500;
 	const maxSalary = 2000;
 	const salary = Math.floor(Math.random() * (maxSalary - minSalary + 1)) + minSalary;
-	const taxes = this.tax * salary;
-	const profit = salary - taxes;
+	const taxes = +(this.tax * salary).toFixed(2);
+	const profit = +(salary - taxes).toFixed(2);
 	console.log({ salary, taxes, profit});
 }
 setInterval(getMySalary.bind(ukraine), 10000);
