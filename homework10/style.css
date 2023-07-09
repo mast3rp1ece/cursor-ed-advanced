@@ -1,0 +1,42 @@
+body {
+	background: url(./img/neom-urBne08-lTQ-unsplash.jpg) 0/auto 200% no-repeat;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	height: 100vh;
+	overflow: hidden;
+	display: grid;
+	align-items: center;
+}
+.key_container {
+	color: #fff;
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	margin: 0 auto;
+	
+}
+.key {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2px;
+	border-radius: 5%;
+	background-color: #2e2e2e80;
+	max-width: 90px;
+	width: 100%;
+	padding: 10px;
+	transition: all 0.15s;
+}
+.play{
+border: 1px solid yellow;
+transform: scale(0.9);
+box-shadow: 0 0 10px 1px yellow;
+}
+
+kbd {
+	font-size: 50px;
+	font-weight: bold;
+}
+span {
+	color: yellow;
+	font-style: italic;
+}
