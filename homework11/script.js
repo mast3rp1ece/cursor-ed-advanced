@@ -1,20 +1,21 @@
-function getRandomChinese(lenght) {
+function getRandomChinese(length) {
 	return new Promise((resolve) => {
 		let result = "";
-		let count = 0;
-		const generateCharacter = () => {
-			const sing = String.fromCharCode(Math.floor(Math.random() * (65536 - 19968) + 19968));
-			result += sing;
-			count++;
-			if (count === lenght) {
-				resolve(result);
+		const generateChar = () => {
+			const sing = Date.now().toString().slice(-5);
+			const char = String.fromCharCode(sing);
+			result += char;
+			if (result.length < length) {
+				setTimeout(generateChar, 50);
 			} else {
-				setTimeout(generateCharacter, 50);
+				resolve(result);
 			}
 		};
-		generateCharacter();
+		generateChar();
 	});
 }
 getRandomChinese(4).then((resutl) => {
 	console.log(resutl);
+}).catch((error) => {
+	console.log(error);
 });
