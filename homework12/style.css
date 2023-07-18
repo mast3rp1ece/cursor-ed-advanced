@@ -1,0 +1,53 @@
+@import url('https://fonts.cdnfonts.com/css/robotaur');
+body {
+	font-family: 'Robotaur', sans-serif;
+	text-align: center;
+}
+
+.character-list {
+    list-style-type: none;
+    padding: 0;
+	 display: flex;
+	 gap: 20px;
+	 justify-content: center;
+}
+
+.character-list-item {
+    margin-bottom: 20px;
+}
+
+.character-name {
+    font-weight: bold;
+	 text-align: center;
+}
+
+.character-details {
+    /* margin-left: 20px; */
+	 text-align: center;
+}
+
+.planet-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.planet-list-item {
+    margin-bottom: 10px;
+}
+img {
+	max-width: 100px;
+	width: 100%;
+}
+button {
+	border: 3px solid red;
+	font-family: inherit;
+	background: transparent;
+	
+}
+button:hover {
+	background: gray;
+}
+button:active {
+	background: transparent;
+	transform: scale(0.95);
+}
