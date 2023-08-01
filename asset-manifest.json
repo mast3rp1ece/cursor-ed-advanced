@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/cursor-ed-advanced/static/css/main.f98e2be7.css",
+    "main.js": "/cursor-ed-advanced/static/js/main.c823d5eb.js",
+    "static/js/787.fc3d1237.chunk.js": "/cursor-ed-advanced/static/js/787.fc3d1237.chunk.js",
+    "index.html": "/cursor-ed-advanced/index.html",
+    "static/media/like.svg": "/cursor-ed-advanced/static/media/like.82a9991fa4a5c7d1611163f5932d12bd.svg",
+    "static/media/comment.svg": "/cursor-ed-advanced/static/media/comment.9618b1136671b4cfac5d36f210777f6e.svg",
+    "static/media/download.svg": "/cursor-ed-advanced/static/media/download.c8d42741f92a158cc0e22701d9978fb2.svg",
+    "static/media/share.svg": "/cursor-ed-advanced/static/media/share.cfaf9174995b971052b3acc181ebb867.svg",
+    "main.f98e2be7.css.map": "/cursor-ed-advanced/static/css/main.f98e2be7.css.map",
+    "main.c823d5eb.js.map": "/cursor-ed-advanced/static/js/main.c823d5eb.js.map",
+    "787.fc3d1237.chunk.js.map": "/cursor-ed-advanced/static/js/787.fc3d1237.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f98e2be7.css",
+    "static/js/main.c823d5eb.js"
+  ]
+}
